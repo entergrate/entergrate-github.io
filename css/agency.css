@@ -125,7 +125,10 @@ img::-moz-selection {
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: #fec503;
 }
-
+.intro-wrapper {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 10px;
+}
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
   font-weight: 400;
@@ -147,7 +150,7 @@ img::-moz-selection {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: #212529;
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -175,11 +178,12 @@ header.masthead {
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-position: center 71%;
+  -webkit-background-size: 48%;
+  -moz-background-size: 48%;
+  -o-background-size: 48%;
+  background-size: 48%;
+  background-color: #ffdc4c;
 }
 
 header.masthead .intro-text {
