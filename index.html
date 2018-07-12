@@ -59,8 +59,11 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-wrapper">
-            <div class="intro-lead-in">Next town hall meeting</div>
-            <div class="intro-heading text-uppercase">09 - Aug - 2018</div>
+            <div class="intro-lead-in">Join the converstation</div>
+            <div class="intro-heading text-uppercase" id="countdown-timer">09 - Aug - 2018</div>
+            <div class="intro-next-event-click">
+              <p>Click <a href="https://www.eventbrite.com/e/entergrate-helsinki-town-hall-meeting-tickets-47983062632?ref=eios&aff=eios">here</a> for free registration</p>
+            </div>
             <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Tell Me More</a>
           </div>
         </div>
@@ -129,7 +132,7 @@
                       <h4 class="subheading">Next townhall meeting</h4>
                     </div>
                     <div class="timeline-body">
-                      <p class="text-muted"><a href="#contact">Contact us</a> for more information</p>
+                      <p class="text-muted">Click <a href="https://www.eventbrite.com/e/entergrate-helsinki-town-hall-meeting-tickets-47983062632?ref=eios&aff=eios">here</a> for more information</p>
                     </div>
                   </div>
                 </li>
@@ -343,7 +346,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">Join the conversation.</h3>
           </div>
         </div>
         <div class="row">
@@ -539,6 +542,37 @@
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
 
+    <!-- Count down timer -->
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Aug 9, 2018 15:37:25").getTime();
+      
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      
+        // Get todays date and time
+        var now = new Date().getTime();
+      
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+      
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+        // Display the result in the element with id="demo"
+        document.getElementById("countdown-timer").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+      
+        // If the count down is finished, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown-timer").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+      </script>
   </body>
 
 </html>
