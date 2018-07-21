@@ -602,10 +602,15 @@ header.masthead .intro-text .intro-heading {
   text-align: center;
 }
 
-.team-member img {
+.team-member .team-img-cont {
   width: 225px;
   height: 225px;
   border: 7px solid #fff;
+  overflow: hidden;
+}
+.team-img-cont img {
+  width: 100%;
+  height: 100%;
 }
 
 .team-member h4 {
