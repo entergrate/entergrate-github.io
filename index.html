@@ -9,6 +9,7 @@
     <meta name="author" content="">
 
     <title>Entergrate - Homepage</title>
+    <link rel="icon" href="img/about/2.png" type="image/png" sizes="16x16">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -44,6 +45,9 @@
               <a class="nav-link js-scroll-trigger" href="#events">Events</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
@@ -57,15 +61,17 @@
     <!-- Header -->
     <header class="masthead">
       <div class="container">
+        <div class="master-bg-cont">
+          <img src="./img/new_bg.jpeg" />
+        </div>
         <div class="intro-text">
-          <div class="intro-wrapper">
-            <div class="intro-lead-in">Join the converstation</div>
-            <div class="intro-heading text-uppercase" id="countdown-timer">09 - Aug - 2018</div>
+          <!-- <div class="intro-wrapper">
+            <div class="intro-heading text-uppercase" id="countdown-timer">20 - Aug - 2018</div>
             <div class="intro-next-event-click">
-              <p>Click <a href="https://www.eventbrite.com/e/entergrate-helsinki-town-hall-meeting-tickets-47983062632?ref=eios&aff=eios">here</a> for free registration</p>
+              <p>Click <a href="https://www.eventbrite.com/e/come-volunteer-for-entergrate-tickets-48952482192">here</a> for free registration</p>
             </div>
             <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Tell Me More</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </header>
@@ -122,14 +128,29 @@
           <div class="row">
             <div class="col-lg-12">
               <ul class="timeline">
+                <li class="timeline-inverted">
+                      <div class="timeline-image">
+                        <img class="rounded-circle img-fluid img-max-height" style="width: 100%" src="img/new_bg.jpeg" alt="">
+                      </div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4>August 20 2018</h4>
+                          <h4 class="subheading">Become a volunteer</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p class="text-muted">Come be an Entergrate volunteer</p>
+                          <p class="text-muted">Click <a href="https://www.eventbrite.com/e/come-volunteer-for-entergrate-tickets-48952482192">here</a> for more information</p>
+                        </div>
+                      </div>
+                    </li>
                 <li>
                   <div class="timeline-image">
                     <img class="rounded-circle img-fluid img-max-height" src="img/about/2.png" style="height: 100%" alt="">
                   </div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
-                      <h4>August 2018</h4>
-                      <h4 class="subheading">Next townhall meeting</h4>
+                      <h4>August 09 2018</h4>
+                      <h4 class="subheading">Townhall meeting</h4>
                     </div>
                     <div class="timeline-body">
                       <p class="text-muted">Click <a href="https://www.eventbrite.com/e/entergrate-helsinki-town-hall-meeting-tickets-47983062632?ref=eios&aff=eios">here</a> for more information</p>
@@ -164,7 +185,7 @@
       </section>
 
     <!-- meetings -->
-    <section class="bg-light" id="events">
+    <section class="bg-light" id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -603,9 +624,9 @@
     <script src="js/agency.min.js"></script>
 
     <!-- Count down timer -->
-    <script>
+    <!-- <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Aug 9, 2018 15:37:25").getTime();
+      var countDownDate = new Date("Aug 20, 2018 17:00:00").getTime();
       
       // Update the count down every 1 second
       var x = setInterval(function() {
@@ -632,7 +653,7 @@
           document.getElementById("countdown-timer").innerHTML = "EXPIRED";
         }
       }, 1000);
-      </script>
+      </script> -->
   </body>
 
 </html>

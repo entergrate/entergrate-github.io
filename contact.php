@@ -1,13 +1,11 @@
 <?php
 
 // Sender's email address
-$from = 'Contact form <entergrate.inq@gmail.com>';
-
-// Recipent of the email
-$sendTo = 'Contact form <entergrate.inq@gmail.com>';
-
-// Subject of the email
-$subject = "Message from contact form"
+$from		= $_POST['name'];
+$email		= $_POST['email'];
+$message	= $_POST['message'];
+$sendTo     = 'entergrate.inq@gmail.com';
+$subject    = "Email from $from";
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
